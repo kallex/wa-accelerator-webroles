@@ -1,4 +1,6 @@
-﻿namespace Microsoft.Samples.DPE.AzureMultiTenantApp.Web.Tests.Storage
+﻿using Microsoft.WindowsAzure;
+
+namespace Microsoft.Samples.DPE.AzureMultiTenantApp.Web.Tests.Storage
 {
     using System;
     using System.Collections.Generic;
@@ -6,7 +8,6 @@
     using Microsoft.Samples.DPE.AzureMultiTenantApp.Web.Core.Entities;
     using Microsoft.Samples.DPE.AzureMultiTenantApp.Web.Core.Storage;
     using Microsoft.VisualStudio.TestTools.UnitTesting;
-    using Microsoft.WindowsAzure;
 
     [TestClass]
     public class WebSiteRepositoryTests

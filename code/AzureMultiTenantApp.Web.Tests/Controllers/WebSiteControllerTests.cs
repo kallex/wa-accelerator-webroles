@@ -1,4 +1,6 @@
-﻿namespace Microsoft.Samples.DPE.AzureMultiTenantApp.Web.Tests.Controllers
+﻿using Microsoft.WindowsAzure;
+
+namespace Microsoft.Samples.DPE.AzureMultiTenantApp.Web.Tests.Controllers
 {
     using System;
     using System.Linq;
@@ -7,7 +9,7 @@
     using Microsoft.Samples.DPE.AzureMultiTenantApp.Web.Core.Storage;
     using Microsoft.Samples.DPE.AzureMultiTenantApp.Web.Models;
     using Microsoft.VisualStudio.TestTools.UnitTesting;
-    using Microsoft.WindowsAzure;
+
 
     [TestClass]
     public class WebSiteControllerTests
