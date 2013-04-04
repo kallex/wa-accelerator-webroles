@@ -1,4 +1,7 @@
-﻿namespace Microsoft.Samples.DPE.AzureMultiTenantApp.Web
+﻿using System;
+using System.Web;
+
+namespace Microsoft.Samples.DPE.AzureMultiTenantApp.Web
 {
     using System.Configuration;
     using System.Web.Mvc;
@@ -8,6 +11,15 @@
 
     public class MvcApplication : System.Web.HttpApplication
     {
+        protected void Application_BeginRequest(Object sender, EventArgs e)
+        {
+            var request = HttpContext.Current.Request;
+            if (request.Url.Host.Contains(".cloudapp.net") == false)
+            {
+                HttpContext.Current.Response.End();
+            }
+        }
+
         public static void RegisterGlobalFilters(GlobalFilterCollection filters)
         {
             filters.Add(new HandleErrorAttribute());
