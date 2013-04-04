@@ -14,8 +14,11 @@ namespace Microsoft.Samples.DPE.AzureMultiTenantApp.Web
         protected void Application_BeginRequest(Object sender, EventArgs e)
         {
             var request = HttpContext.Current.Request;
+            // We DO NOT want this site manager to respond any name-IP mapping that leads to here.
+            // Only when it's pointed to .cloudapp.net
             if (request.Url.Host.Contains(".cloudapp.net") == false)
             {
+                HttpContext.Current.Response.StatusCode = 404;
                 HttpContext.Current.Response.End();
             }
         }
