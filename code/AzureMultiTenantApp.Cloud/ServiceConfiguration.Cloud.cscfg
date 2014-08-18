@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ServiceConfiguration serviceName="AzureMultiTenantApp.Cloud" xmlns="http://schemas.microsoft.com/ServiceHosting/2008/10/ServiceConfiguration" osFamily="2" osVersion="*" schemaVersion="2013-10.2.2">
+<ServiceConfiguration serviceName="AzureMultiTenantApp.Cloud" xmlns="http://schemas.microsoft.com/ServiceHosting/2008/10/ServiceConfiguration" osFamily="2" osVersion="*" schemaVersion="2014-06.2.4">
   <Role name="AzureMultiTenantApp.Web">
     <Instances count="1" />
     <ConfigurationSettings>

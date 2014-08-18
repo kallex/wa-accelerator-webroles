@@ -1,8 +1,10 @@
-﻿namespace Microsoft.Samples.DPE.AzureMultiTenantApp.Web.Core.Storage
+﻿using System.Web.Script.Serialization;
+
+namespace Microsoft.Samples.DPE.AzureMultiTenantApp.Web.Core.Storage
 {
     using System;
     using System.IO;
-    using System.Web.Script.Serialization;
+    //using System.Web.Script.Serialization;
     using System.Xml.Serialization;
     using Microsoft.WindowsAzure;
     using Microsoft.WindowsAzure.StorageClient;
